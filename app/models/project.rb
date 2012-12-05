@@ -28,7 +28,7 @@ class Project < ActiveRecord::Base
   include Team
 
   attr_accessible :name, :path, :description, :code, :default_branch, :issues_enabled,
-                  :wall_enabled, :merge_requests_enabled, :wiki_enabled
+                  :wall_enabled, :merge_requests_enabled, :wiki_enabled, :private_flag
   attr_accessor :error_code
 
   # Relations
